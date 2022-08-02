@@ -1,0 +1,243 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: lato;
+}
+
+html, body, main {
+    height: 100%;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+header {
+    display: flex;
+    height: 3rem;
+    width: 100%;
+    padding: 0rem 1rem;
+    align-items: center;
+    color: white;
+    background: rgba(0, 0, 0, 0.7);
+    position: fixed;
+    z-index: 1;
+    font-family: Lato;
+    font-weight: 400;
+}
+
+#my-name {
+    display: inline-block;
+    font-family: Lato;
+    font-weight: 700;
+}
+
+nav {
+    display: flex;
+    margin-left: auto;
+    justify-content: flex-end;
+}
+
+ul {
+    display: flex;
+}
+
+nav li {
+    display: inline-block;
+    margin: 0rem 1rem;
+}
+
+.about {
+    height: 100%;
+    background-image: url("resources/christopher-gower-m_HRfLhgABo-unsplash.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 80% 60%;
+    font-family: lato;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    color: gray;
+}
+
+h1 {
+    font-weight: 700;
+}
+
+h2 {
+    font-size: 3rem;
+}
+
+.section-title {
+    padding-bottom: 1rem;
+}
+
+.info {
+    padding-bottom: 15rem;
+}
+
+p {
+    font-size: 1.5rem;
+}
+
+.subtitle {
+    font-size: 2rem;
+}
+
+.description {
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.about:before {
+    content: "";
+    position: absolute;
+    left: 0; right: 0;
+    top: 0; bottom: 0;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 0;
+  }
+
+.about-me {
+    width: 30%;
+    height: 75%;
+    position: relative;
+    top: 40%;
+    left: 12%;
+    color: white;
+}
+
+.work {
+    background-color: #FFF3C3;
+    text-align: center;
+}
+
+.work .description {
+    padding-bottom: 1rem;
+}
+
+.website {
+    padding-bottom: 1.2rem;
+}
+
+.website:hover {
+    color: blue;
+}
+
+.website-img {
+    display: none;
+    object-fit: cover;
+    object-position: center center;
+    width: 50%;
+    height: auto;
+    overflow: none;
+    border: 2px solid black;
+    margin-bottom: 1.2rem;
+}
+
+.contact {
+    background-color: #C3FFDF;
+    text-align: center;
+    padding-top: 2rem;
+    font-size: 2rem;
+}
+
+.website {
+    font-weight: bold;
+}
+
+.work-text {
+    padding-top: 2rem;
+}
+
+/*@media only screen and (max-width: 508px) {
+    .about-me {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 165px) {
+    #my-name {
+        font-size: 0.8rem;
+    }
+}
+
+@media only screen and (max-height: 255px) {
+    .about-me {
+        width: 100%;
+        font-size: 1rem;
+    }
+}
+
+
+/*tablet portrait*/
+@media only screen and (max-width:768px) {
+
+    #me-description {
+        display: none;
+    }
+
+    .about {
+        display: block;
+        height: 100%;
+        background-position: 55% 50%;
+    }
+
+    .about-me {
+        top: 30%;
+        left: 16%;
+        width: 25%;
+        font-size: 1.7rem;
+    }
+
+    header {
+        position: absolute;
+        display: block;
+        background: none;
+        height: 25%;
+        width: 25%;
+        padding: 0px;
+        top: 60%;
+        left: 37%;
+        margin-top: 4rem;
+        font-weight: bold;
+    }
+
+    nav {
+        display: block;
+        justify-content: center;
+    }
+
+    #my-name {
+        display: none;
+    }
+
+    ul {
+        display: block;
+        top: 50%;
+        width: 10%;
+    }
+
+    nav li {
+        display: block;
+        font-size: 2rem;
+    }
+    
+    .work {
+        padding: 0rem 1.2rem;
+    }
+}
+
+/*mobile devices*/
+@media only screen and (max-width: 480px) {
+    header {
+        left: 32%;
+    }
+}

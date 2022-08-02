@@ -1,0 +1,1 @@
+Welcome to my portfolio! This is a place where you can check out some of my work as an aspiring front end developer. In the work section of my portfolio, you can click the headers to access image examples of some websites that I have created.
